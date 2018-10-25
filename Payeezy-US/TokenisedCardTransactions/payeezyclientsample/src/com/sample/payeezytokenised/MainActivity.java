@@ -13,7 +13,7 @@ import com.sdk.payeezytokenised.RequestTask;
 
 @SuppressLint("DefaultLocale")
 public class MainActivity extends Activity {
-    public TextView displayResult;
+    public static TextView displayResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
