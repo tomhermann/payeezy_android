@@ -1,137 +1,140 @@
 package com.firstdata.firstapi.client.domain.v2;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 import org.codehaus.jackson.annotate.JsonAutoDetect;
 import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
 import org.codehaus.jackson.annotate.JsonProperty;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonInclude(Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = Visibility.ANY, getterVisibility = Visibility.NONE, setterVisibility = Visibility.NONE)
 public class Address {
 
-	public Address() {
-	}
-	@JsonProperty("name")
-	private String name;
+    public Address() {
+    }
 
-	@JsonProperty("street")
-	private String addressLine1;
+    @JsonProperty("name")
+    private String name;
 
-	
-	@JsonProperty("state_province")
-	private String state;
-	
-	@JsonProperty("city")
-	private String city;
-	
-	@JsonProperty("country")
-	private String country;
-	
-	@JsonProperty("email")
-	private String email;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("phone")
-	private Phone phone;
-	
-	@JsonProperty("zip_postal_code")
-	private String zip;
-	
-	public String getZip() {
-		return zip;
-	}
+    @JsonProperty("street")
+    private String addressLine1;
 
-	@JsonProperty("zip_postal_code")
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
 
-	public String getName() {
-		return name;
-	}
+    @JsonProperty("state_province")
+    private String state;
 
-	@JsonProperty("name")
-	public void setName(String name) {
-		this.name = name;
-	}
+    @JsonProperty("city")
+    private String city;
 
-	public String getAddressLine1() {
-		return addressLine1;
-	}
-	
-	@JsonProperty("street")
-	public void setAddressLine1(String addressLine1) {
-		this.addressLine1 = addressLine1;
-	}
+    @JsonProperty("country")
+    private String country;
 
-	public String getState() {
-		return state;
-	}
-	
-	@JsonProperty("state_province")
-	public void setState(String state) {
-		this.state = state;
-	}
+    @JsonProperty("email")
+    private String email;
 
-	public String getCity() {
-		return city;
-	}
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("phone")
+    private Phone phone;
 
-	@JsonProperty("city")
-	public void setCity(String city) {
-		this.city = city;
-	}
+    @JsonProperty("zip_postal_code")
+    private String zip;
 
-	public String getCountry() {
-		return country;
-	}
+    public String getZip() {
+        return zip;
+    }
 
-	@JsonProperty("country")
-	public void setCountry(String country) {
-		this.country = country;
-	}
+    @JsonProperty("zip_postal_code")
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	@JsonProperty("phone")
-	public Phone getPhone() {
-		return phone;
-	}
+    public String getAddressLine1() {
+        return addressLine1;
+    }
 
-	@JsonProperty("phone")
-	public void setPhone(Phone phone) {
-		this.phone = phone;
-	}
+    @JsonProperty("street")
+    public void setAddressLine1(String addressLine1) {
+        this.addressLine1 = addressLine1;
+    }
 
-	public static class Phone{
-		@JsonProperty("type")
-		private String type;
-		@JsonProperty("number")
-		private String number;
-		public String getType() {
-			return type;
-		}
-		public void setType(String type) {
-			this.type = type;
-		}
-		public String getNumber() {
-			return number;
-		}
-		public void setNumber(String number) {
-			this.number = number;
-		}
-	}
-	
-	
-	
+    public String getState() {
+        return state;
+    }
+
+    @JsonProperty("state_province")
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    @JsonProperty("city")
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    @JsonProperty("country")
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @JsonProperty("phone")
+    public Phone getPhone() {
+        return phone;
+    }
+
+    @JsonProperty("phone")
+    public void setPhone(Phone phone) {
+        this.phone = phone;
+    }
+
+    public static class Phone {
+        @JsonProperty("type")
+        private String type;
+        @JsonProperty("number")
+        private String number;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public String getNumber() {
+            return number;
+        }
+
+        public void setNumber(String number) {
+            this.number = number;
+        }
+    }
+
 
 }

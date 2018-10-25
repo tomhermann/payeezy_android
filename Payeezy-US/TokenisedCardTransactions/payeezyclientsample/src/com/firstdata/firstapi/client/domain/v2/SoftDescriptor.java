@@ -1,121 +1,120 @@
 package com.firstdata.firstapi.client.domain.v2;
 
-import org.codehaus.jackson.annotate.JsonAutoDetect;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
+import org.codehaus.jackson.annotate.JsonProperty;
 
 @JsonInclude(Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = Visibility.ANY, getterVisibility = Visibility.NONE, setterVisibility = Visibility.NONE)
 public class SoftDescriptor {
 
-	public SoftDescriptor() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	@JsonProperty("dba_name")
-	private String dba_name;
-	
-	@JsonProperty("street")
-	private String street;
-	
-	@JsonProperty("city")
-	private String city;
-	
-	@JsonProperty("region")
-	private String region;
-	
-	@JsonProperty("postal_code")
-	private String postalCode;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("mid")
-	private String mid;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("mcc")
-	private String mcc;
-	
-	
+    public SoftDescriptor() {
+        // TODO Auto-generated constructor stub
+    }
 
-	@JsonProperty("country_code")
-	private String countryCode;
-	
-	@JsonProperty("merchant_contact_info")
-	private String merchantContactInfo;
+    @JsonProperty("dba_name")
+    private String dba_name;
 
-	public String getDba_name() {
-		return dba_name;
-	}
+    @JsonProperty("street")
+    private String street;
 
-	public void setDba_name(String dba_name) {
-		this.dba_name = dba_name;
-	}
+    @JsonProperty("city")
+    private String city;
 
-	public String getStreet() {
-		return street;
-	}
+    @JsonProperty("region")
+    private String region;
 
-	public void setStreet(String street) {
-		this.street = street;
-	}
+    @JsonProperty("postal_code")
+    private String postalCode;
 
-	public String getCity() {
-		return city;
-	}
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("mid")
+    private String mid;
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("mcc")
+    private String mcc;
 
-	public String getRegion() {
-		return region;
-	}
 
-	public void setRegion(String region) {
-		this.region = region;
-	}
+    @JsonProperty("country_code")
+    private String countryCode;
 
-	public String getPostalCode() {
-		return postalCode;
-	}
+    @JsonProperty("merchant_contact_info")
+    private String merchantContactInfo;
 
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
-	}
+    public String getDba_name() {
+        return dba_name;
+    }
 
-	public String getCountryCode() {
-		return countryCode;
-	}
+    public void setDba_name(String dba_name) {
+        this.dba_name = dba_name;
+    }
 
-	public void setCountryCode(String countryCode) {
-		this.countryCode = countryCode;
-	}
+    public String getStreet() {
+        return street;
+    }
 
-	public String getMerchantContactInfo() {
-		return merchantContactInfo;
-	}
+    public void setStreet(String street) {
+        this.street = street;
+    }
 
-	public void setMerchantContactInfo(String merchantContactInfo) {
-		this.merchantContactInfo = merchantContactInfo;
-	}
-	
-	public String getMid() {
-		return mid;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setMid(String mid) {
-		this.mid = mid;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public String getMcc() {
-		return mcc;
-	}
+    public String getRegion() {
+        return region;
+    }
 
-	public void setMcc(String mcc) {
-		this.mcc = mcc;
-	}
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
+
+    public String getMerchantContactInfo() {
+        return merchantContactInfo;
+    }
+
+    public void setMerchantContactInfo(String merchantContactInfo) {
+        this.merchantContactInfo = merchantContactInfo;
+    }
+
+    public String getMid() {
+        return mid;
+    }
+
+    public void setMid(String mid) {
+        this.mid = mid;
+    }
+
+    public String getMcc() {
+        return mcc;
+    }
+
+    public void setMcc(String mcc) {
+        this.mcc = mcc;
+    }
 
 }

@@ -1,16 +1,15 @@
 package com.firstdata.firstapi.client.domain.v2;
 
-import org.codehaus.jackson.annotate.JsonAutoDetect;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
+import org.codehaus.jackson.annotate.JsonProperty;
+
 @JsonInclude(Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = Visibility.ANY, getterVisibility = Visibility.NONE, setterVisibility = Visibility.NONE)
-public class Telecheck 
-{
+public class Telecheck {
 	/*
 	 *                 "tele_check":
                 {   "check_number": "4788250000028291",
@@ -33,220 +32,219 @@ public class Telecheck
     },
 	 * 
 	 */
-	
-	public Telecheck() {
-	}
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("check_number")
-	private String check_number;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("check_type")
-	private String check_type;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("routing_number")
-	private String routing_number;
-	
-	@JsonInclude(Include.NON_NULL)
-	@JsonProperty("account_number")
-	private String account_number;
-	
-	@JsonInclude(Include.NON_NULL)
+
+    public Telecheck() {
+    }
+
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("check_number")
+    private String check_number;
+
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("check_type")
+    private String check_type;
+
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("routing_number")
+    private String routing_number;
+
+    @JsonInclude(Include.NON_NULL)
+    @JsonProperty("account_number")
+    private String account_number;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("accountholder_name")
-	private String accountholder_name;
-	
-	@JsonInclude(Include.NON_NULL)
+    private String accountholder_name;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("customer_id_type")
-	private String customer_id_type;
-	
-	@JsonInclude(Include.NON_NULL)
+    private String customer_id_type;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("customer_id_number")
-	private String customer_id_number;
-	
-	@JsonInclude(Include.NON_NULL)
+    private String customer_id_number;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("client_email")
-	private String client_email;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String client_email;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("gift_card_amount")
-	private String gift_card_amount;
-	
-	@JsonInclude(Include.NON_NULL)
+    private String gift_card_amount;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("vip")
-	private String vip;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String vip;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("clerk_id")
-	private String clerk_id;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String clerk_id;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("device_id")
-	private String device_id;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String device_id;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("release_type")
-	private String release_type;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String release_type;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("registration_number")
-	private String registration_number;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String registration_number;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("registration_date")
-	private String registration_date;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String registration_date;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("date_of_birth")
-	private String date_of_birth;
-    
-	@JsonInclude(Include.NON_NULL)
+    private String date_of_birth;
+
+    @JsonInclude(Include.NON_NULL)
     @JsonProperty("micr")
-	private String micr;
-    
-	public String getCheck_number() {
-		return check_number;
-	}
+    private String micr;
 
-	public void setCheck_number(String check_number) {
-		this.check_number = check_number;
-	}
-		
-	public String getCheck_type() {
-		return check_type;
-	}
+    public String getCheck_number() {
+        return check_number;
+    }
 
-	public void setCheck_type(String check_type) {
-		this.check_type = check_type;
-	}
+    public void setCheck_number(String check_number) {
+        this.check_number = check_number;
+    }
 
-	public String getRouting_number() {
-		return routing_number;
-	}
+    public String getCheck_type() {
+        return check_type;
+    }
 
-	public String getMicr() {
-		return micr;
-	}
+    public void setCheck_type(String check_type) {
+        this.check_type = check_type;
+    }
 
-	public void setMicr(String micr) {
-		this.micr = micr;
-	}
+    public String getRouting_number() {
+        return routing_number;
+    }
 
-	public void setRouting_number(String routing_number) {
-		this.routing_number = routing_number;
-	}
+    public String getMicr() {
+        return micr;
+    }
 
-	public String getAccount_number() {
-		return account_number;
-	}
+    public void setMicr(String micr) {
+        this.micr = micr;
+    }
 
-	public void setAccount_number(String account_number) {
-		this.account_number = account_number;
-	}
+    public void setRouting_number(String routing_number) {
+        this.routing_number = routing_number;
+    }
 
-	public String getAccountholder_name() {
-		return accountholder_name;
-	}
+    public String getAccount_number() {
+        return account_number;
+    }
 
-	public void setAccountholder_name(String accountholder_name) {
-		this.accountholder_name = accountholder_name;
-	}
+    public void setAccount_number(String account_number) {
+        this.account_number = account_number;
+    }
 
-	public String getCustomer_id_type() {
-		return customer_id_type;
-	}
+    public String getAccountholder_name() {
+        return accountholder_name;
+    }
 
-	public void setCustomer_id_type(String customer_id_type) {
-		this.customer_id_type = customer_id_type;
-	}
+    public void setAccountholder_name(String accountholder_name) {
+        this.accountholder_name = accountholder_name;
+    }
 
-	public String getCustomer_id_number() {
-		return customer_id_number;
-	}
+    public String getCustomer_id_type() {
+        return customer_id_type;
+    }
 
-	public void setCustomer_id_number(String customer_id_number) {
-		this.customer_id_number = customer_id_number;
-	}
+    public void setCustomer_id_type(String customer_id_type) {
+        this.customer_id_type = customer_id_type;
+    }
 
-	public String getClient_email() {
-		return client_email;
-	}
+    public String getCustomer_id_number() {
+        return customer_id_number;
+    }
 
-	public void setClient_email(String client_email) {
-		this.client_email = client_email;
-	}
+    public void setCustomer_id_number(String customer_id_number) {
+        this.customer_id_number = customer_id_number;
+    }
 
-	public String getGift_card_amount() {
-		return gift_card_amount;
-	}
+    public String getClient_email() {
+        return client_email;
+    }
 
-	public void setGift_card_amount(String gift_card_amount) {
-		this.gift_card_amount = gift_card_amount;
-	}
+    public void setClient_email(String client_email) {
+        this.client_email = client_email;
+    }
 
-	public String getVip() {
-		return vip;
-	}
+    public String getGift_card_amount() {
+        return gift_card_amount;
+    }
 
-	public void setVip(String vip) {
-		this.vip = vip;
-	}
+    public void setGift_card_amount(String gift_card_amount) {
+        this.gift_card_amount = gift_card_amount;
+    }
 
-	public String getClerk_id() {
-		return clerk_id;
-	}
+    public String getVip() {
+        return vip;
+    }
 
-	public void setClerk_id(String clerk_id) {
-		this.clerk_id = clerk_id;
-	}
+    public void setVip(String vip) {
+        this.vip = vip;
+    }
 
-	public String getDevice_id() {
-		return device_id;
-	}
+    public String getClerk_id() {
+        return clerk_id;
+    }
 
-	public void setDevice_id(String device_id) {
-		this.device_id = device_id;
-	}
+    public void setClerk_id(String clerk_id) {
+        this.clerk_id = clerk_id;
+    }
 
-	public String getRelease_type() {
-		return release_type;
-	}
+    public String getDevice_id() {
+        return device_id;
+    }
 
-	public void setRelease_type(String release_type) {
-		this.release_type = release_type;
-	}
+    public void setDevice_id(String device_id) {
+        this.device_id = device_id;
+    }
 
-	public String getRegistration_number() {
-		return registration_number;
-	}
+    public String getRelease_type() {
+        return release_type;
+    }
 
-	public void setRegistration_number(String registration_number) {
-		this.registration_number = registration_number;
-	}
+    public void setRelease_type(String release_type) {
+        this.release_type = release_type;
+    }
 
-	public String getRegistration_date() {
-		return registration_date;
-	}
+    public String getRegistration_number() {
+        return registration_number;
+    }
 
-	public void setRegistration_date(String registration_date) {
-		this.registration_date = registration_date;
-	}
+    public void setRegistration_number(String registration_number) {
+        this.registration_number = registration_number;
+    }
 
-	public String getDate_of_birth() {
-		return date_of_birth;
-	}
+    public String getRegistration_date() {
+        return registration_date;
+    }
 
-	public void setDate_of_birth(String date_of_birth) {
-		this.date_of_birth = date_of_birth;
-	}
+    public void setRegistration_date(String registration_date) {
+        this.registration_date = registration_date;
+    }
 
-	@Override
-	public Telecheck clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
-		return (Telecheck)super.clone();
-	}
+    public String getDate_of_birth() {
+        return date_of_birth;
+    }
 
-	
-	
+    public void setDate_of_birth(String date_of_birth) {
+        this.date_of_birth = date_of_birth;
+    }
+
+    @Override
+    public Telecheck clone() throws CloneNotSupportedException {
+        // TODO Auto-generated method stub
+        return (Telecheck) super.clone();
+    }
+
+
 }

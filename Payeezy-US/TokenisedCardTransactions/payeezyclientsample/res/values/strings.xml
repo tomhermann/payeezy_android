@@ -26,7 +26,6 @@
     <string name="postgettoken">GetToken</string>
 
 
-
     <string name="getgettoken">Token Generation-GET</string>
     <string name="getauthorisetoken">Authorise</string>
     <string name="getpurchasetoken">Purchase</string>
@@ -35,10 +34,6 @@
     <string name="getpurchaserefundtoken">PurchaseRefund</string>
 
     <string name="posttoken">Token Generation-POST</string>
-
-
-
-
 
 
     <string name="level2">Level2</string>
@@ -59,5 +54,5 @@
     <string name="btn_recurring">Recurring</string>
     <string name="btn_softdescriptors">Soft Descriptors</string>
     <string name="btn_zerodollar">Zero Dollar</string>
-    
+
 </resources>
