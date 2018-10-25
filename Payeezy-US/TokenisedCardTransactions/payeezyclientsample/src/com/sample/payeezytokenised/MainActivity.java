@@ -3,7 +3,6 @@ package com.sample.payeezytokenised;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,28 +11,15 @@ import android.widget.TextView;
 
 import com.sdk.payeezytokenised.RequestTask;
 
-
 @SuppressLint("DefaultLocale")
 public class MainActivity extends Activity {
-
-    private static Context context;
-
-    public static TextView displayResult;
-
-    public void onCreate() {
-        MainActivity.context = getApplicationContext();
-
-    }
-
-    public static Context getAppContext() {
-        return MainActivity.context;
-    }
+    public TextView displayResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayResult = (TextView) findViewById(R.id.textView1);
+        displayResult = findViewById(R.id.textView1);
     }
 
     @Override
@@ -155,6 +141,4 @@ public class MainActivity extends Activity {
 
         System.out.println("getpurchaserefundtoken call end");
     }
-
-
 }

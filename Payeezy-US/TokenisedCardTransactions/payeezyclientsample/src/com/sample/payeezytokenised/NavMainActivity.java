@@ -125,17 +125,13 @@ public class NavMainActivity extends Activity implements
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_nav_main,
-                    container, false);
-            return rootView;
+            return inflater.inflate(R.layout.fragment_nav_main, container, false);
         }
 
         @Override
         public void onAttach(Activity activity) {
             super.onAttach(activity);
-            ((NavMainActivity) activity).onSectionAttached(getArguments()
-                    .getInt(ARG_SECTION_NUMBER));
+            ((NavMainActivity) activity).onSectionAttached(getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
-
 }
